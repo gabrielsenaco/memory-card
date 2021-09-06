@@ -1,0 +1,23 @@
+.message-card {
+  background-color: var(--success-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  max-width: 35%;
+  border-radius: var(--card-border-radius);
+  filter: var(--card-filter-03dp);
+}
+
+.message-card-icon {
+  height: 2.63rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.message-card-text {
+  font-size: 1.125rem;
+  font-weight: var(--primary-font-weight);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
