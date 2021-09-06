@@ -1,0 +1,22 @@
+.score-display, .score {
+  display: flex;
+  flex-direction: row;
+}
+
+.score-display {
+  justify-content: center;
+}
+
+.score-display .score {
+  margin: 1rem;
+
+  font-weight: var(--primary-font-weight);
+  text-transform: uppercase;
+  color: var(--darksky-color);
+  font-size: 2rem;
+}
+
+.score .score-value {
+  color: var(--lightsky-color);
+  margin-left: 0.5rem;
+}
