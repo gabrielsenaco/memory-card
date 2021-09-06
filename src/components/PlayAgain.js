@@ -6,7 +6,7 @@ const PlayAgain = props => {
 
   return (
     <div className='play-again'>
-      <MessageCard image={image} text='You found all ....' />
+      <MessageCard image={image} text='Your memory is good! You found all!' />
       <Button text='Play Again' onClick={clickHandler} />
     </div>
   )
