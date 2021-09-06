@@ -12,8 +12,8 @@ import KingJulien from './../assets/KingJulien.png'
 import Maurice from './../assets/Maurice.png'
 import QueenClover from './../assets/QueenClover.png'
 import Mort from './../assets/Mort.png'
-import { getRandomArray } from './../utils'
 
+import { getRandomArray } from './../utils'
 
 export const createCard = ([title, src]) => {
   return {
