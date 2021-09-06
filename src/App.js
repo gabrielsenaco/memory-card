@@ -4,8 +4,8 @@ import Header from './components/Header'
 import ScoreDisplay from './components/ScoreDisplay'
 import PlayAgain from './components/PlayAgain'
 import CardList from './components/CardList'
+import Footer from './components/Footer'
 import { getRandomArray } from './utils'
-//import './App.css';
 
 const App = () => {
   let [score, setScore] = useState(0)
@@ -103,6 +103,7 @@ const App = () => {
         )}
         <CardList cards={cards} clickHandler={handleCardClick} />
       </main>
+      <Footer />
     </div>
   )
 }
