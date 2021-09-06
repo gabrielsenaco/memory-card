@@ -1,4 +1,5 @@
 import Card from './Card'
+import './../styles/CardList.css'
 
 const CardList = (props) => {
   let {cards, clickHandler} = props
