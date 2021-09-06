@@ -1,3 +1,5 @@
+import uniqid from 'uniqid'
+
 import Alex from './../assets/Alex.png'
 import Marty from './../assets/Marty.png'
 import Gloria from './../assets/Gloria.png'
@@ -10,8 +12,8 @@ import KingJulien from './../assets/KingJulien.png'
 import Maurice from './../assets/Maurice.png'
 import QueenClover from './../assets/QueenClover.png'
 import Mort from './../assets/Mort.png'
+import { getRandomArray } from './../utils'
 
-import uniqid from 'uniqid'
 
 export const createCard = ([title, src]) => {
   return {
@@ -38,7 +40,9 @@ export const createCardList = () => {
     ['Mort', Mort]
   ]
 
-  return list.map(name => {
+  list = list.map(name => {
     return createCard(name)
   })
+
+  return getRandomArray(list)
 }
