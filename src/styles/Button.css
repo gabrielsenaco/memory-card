@@ -1,0 +1,21 @@
+.button {
+  padding: 0.5rem 2rem;
+  min-height: 2.63rem;
+  outline: none;
+  background: none;
+  border: none;
+  background-color: var(--darksky-color);
+  border-radius: var(--card-border-radius);
+  font-size: 1.125rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: var(--primary-font-weight);
+  filter: var(--card-filter-03dp);
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button:hover {
+  filter: var(--card-filter-04dp);
+  background-color: var(--success-color);
+}

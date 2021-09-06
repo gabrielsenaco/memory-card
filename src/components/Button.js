@@ -1,3 +1,5 @@
+import './../styles/Button.css'
+
 const Button = props => {
   let { onClick, text, color, bgColor } = props
 
