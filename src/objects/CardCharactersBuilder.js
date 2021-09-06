@@ -1,10 +1,22 @@
+import Alex from './../assets/Alex.png'
+import Marty from './../assets/Marty.png'
+import Gloria from './../assets/Gloria.png'
+import Melman from './../assets/Melman.png'
+import Skipper from './../assets/Skipper.png'
+import Kowalski from './../assets/Kowalski.png'
+import Rico from './../assets/Rico.png'
+import Private from './../assets/Private.png'
+import KingJulien from './../assets/KingJulien.png'
+import Maurice from './../assets/Maurice.png'
+import QueenClover from './../assets/QueenClover.png'
+import Mort from './../assets/Mort.png'
+
 import uniqid from 'uniqid'
 
-export const createCard = title => {
-  const imageTitle = title.replace(' ', '')
+export const createCard = ([title, src]) => {
   return {
     title,
-    src: `assets/${imageTitle}.png`,
+    src,
     clicked: false,
     id: uniqid()
   }
@@ -12,18 +24,18 @@ export const createCard = title => {
 
 export const createCardList = () => {
   let list = [
-    'Alex',
-    'Marty',
-    'Gloria',
-    'Melman',
-    'Skipper',
-    'Kowalski',
-    'Rico',
-    'Private',
-    'King Julien',
-    'Maurice',
-    'Queen Clover',
-    'Mort'
+    ['Alex', Alex],
+    ['Marty', Marty],
+    ['Gloria', Gloria],
+    ['Melman', Melman],
+    ['Skipper', Skipper],
+    ['Kowalski', Kowalski],
+    ['Rico', Rico],
+    ['Private', Private],
+    ['King Julien', KingJulien],
+    ['Maurice', Maurice],
+    ['Queen Clover', QueenClover],
+    ['Mort', Mort]
   ]
 
   return list.map(name => {
