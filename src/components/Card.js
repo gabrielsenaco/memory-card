@@ -1,3 +1,5 @@
+import './../styles/Card.css'
+
 const Card = props => {
   let { name, src, clickHandler } = props
 
