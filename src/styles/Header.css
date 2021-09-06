@@ -1,0 +1,15 @@
+header {
+  color: var(--darksky-color);
+  text-align: center;
+}
+
+header h1 {
+  font-weight: var(--primary-font-weight);
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+header p {
+  font-weight: var(--secondary-font-weight);
+  font-size: 1.3rem;
+}
