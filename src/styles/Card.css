@@ -16,7 +16,7 @@
 .card img {
   height: 14.625rem;
   width: auto;
-  max-width: 100%; /* TODO CHECK IT LATER */
+  max-width: 100%;
 }
 
 .card figCaption {
