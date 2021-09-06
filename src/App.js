@@ -26,7 +26,7 @@ const App = () => {
         if (card.id !== id) return card
         let clicked = card.clicked
 
-        if (!card.clicked) {
+        if (!clicked) {
           clicked = true
           setScore(score => {
             ++score
