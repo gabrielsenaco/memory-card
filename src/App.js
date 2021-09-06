@@ -43,7 +43,6 @@ const App = () => {
           clicked
         }
       })
-
       return getRandomArray(cards)
     })
   }
