@@ -14,7 +14,7 @@ header p {
   font-size: 1.3rem;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   header h1 {
     font-size: 3rem;
   }

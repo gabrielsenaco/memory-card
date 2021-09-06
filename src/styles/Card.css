@@ -10,7 +10,7 @@
 }
 
 .card:nth-child(even) {
-  background-color: var(--success-color);;
+  background-color: var(--success-color);
 }
 
 .card img {
@@ -19,9 +19,9 @@
   max-width: 100%;
 }
 
-.card figCaption {
+.card figcaption {
   border-bottom-right-radius: var(--card-border-radius);
-  border-bottom-left-radius: var(--card-border-radius);;
+  border-bottom-left-radius: var(--card-border-radius);
   font-size: 1.5rem;
   font-weight: var(--primary-font-weight);
   color: var(--darksky-color);
@@ -33,6 +33,6 @@
   filter: var(--card-filter-08dp);
 }
 
-.card:hover figCaption {
+.card:hover figcaption {
   color: var(--lightsky-color);
 }

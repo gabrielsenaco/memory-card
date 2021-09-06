@@ -1,19 +1,22 @@
 import Card from './Card'
 import './../styles/CardList.css'
 
-const CardList = (props) => {
-  let {cards, clickHandler} = props
+const CardList = props => {
+  let { cards, clickHandler } = props
 
-  cards = cards.map((card) => {
+  cards = cards.map(card => {
     let handler = clickHandler.bind(null, card.id)
-    return <Card key={card.id} src={card.src} name={card.title} clickHandler={handler}/>
+    return (
+      <Card
+        key={card.id}
+        src={card.src}
+        name={card.title}
+        clickHandler={handler}
+      />
+    )
   })
 
-  return (
-      <ul className='card-list'>
-        {cards}
-      </ul>
-    )
+  return <ul className='card-list'>{cards}</ul>
 }
 
 export default CardList
