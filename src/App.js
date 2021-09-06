@@ -53,12 +53,13 @@ const App = () => {
 
   function clearClickedCards () {
     setCards(cards => {
-      return cards.map(card => {
+      cards = cards.map(card => {
         return {
           ...card,
           clicked: false
         }
       })
+      return getRandomArray(cards)
     })
   }
 
