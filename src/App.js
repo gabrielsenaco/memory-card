@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { createCardList } from './objects/CardCharactersBuilder'
 import Header from './components/Header'
-import DisplayScore from './components/DisplayScore'
+import ScoreDisplay from './components/ScoreDisplay'
 import PlayAgain from './components/PlayAgain'
 import CardList from './components/CardList'
 import { getRandomArray } from './utils'
@@ -94,7 +94,7 @@ const App = () => {
     <div id='app'>
       <Header />
       <main>
-        <DisplayScore scoreValue={score} bestScoreValue={bestScore} />
+        <ScoreDisplay scoreValue={score} bestScoreValue={bestScore} />
         {showPlayAgain && (
           <PlayAgain
             clickHandler={handlePlayAgainClick}
