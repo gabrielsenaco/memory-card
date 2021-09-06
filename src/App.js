@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { createCardList } from './objects/CardCharactersBuilder'
 import Header from './components/Header'
 import DisplayScore from './components/DisplayScore'
@@ -13,12 +13,73 @@ const App = () => {
   let [cards, setCards] = useState(createCardList())
   let [showPlayAgain, setShowPlayAgain] = useState(false)
 
+  function clearClickedCards () {
+    setCards(cards => {
+      return cards.map(card => {
+        return {
+          ...card,
+          clicked: false
+        }
+      })
+    })
+  }
+
+  function updateBestScore (refScore = score) {
+    setBestScore(bestScore => {
+      if (refScore > bestScore) {
+        bestScore = refScore
+      }
+      return bestScore
+    })
+  }
+
+  useEffect(() => {
+    setShowPlayAgain(() => {
+      return score === cards.length
+    })
+  }, [score, cards.length])
+
+  function clearStateWhenScoreReachesLimit () {
+    let reachLimit = score === cards.length
+    if (!reachLimit) return
+
+    setShowPlayAgain(() => false)
+    updateBestScore(score)
+    setScore(() => 0)
+    clearClickedCards()
+  }
+
   function handleCardClick (id, event) {
-    // card click
+    clearStateWhenScoreReachesLimit()
+    setCards(cards => {
+      cards = cards.map(card => {
+        if (card.id !== id) return card
+        let clicked = card.clicked
+
+        if (!card.clicked) {
+          clicked = true
+          setScore(score => {
+            ++score
+            return score
+          })
+        } else {
+          clearClickedCards()
+          updateBestScore()
+          setScore(() => 0)
+        }
+
+        return {
+          ...card,
+          clicked
+        }
+      })
+
+      return getRandomArray(cards)
+    })
   }
 
   function handlePlayAgainClick () {
-    //play again click
+    clearStateWhenScoreReachesLimit()
   }
 
   function getRandomCards () {
