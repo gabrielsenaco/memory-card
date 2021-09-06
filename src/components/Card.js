@@ -4,7 +4,7 @@ const Card = props => {
   return (
     <figure className='card' onClick={clickHandler}>
       <img src={src} alt={name} />
-      <figCaption>{name}</figCaption>
+      <figcaption>{name}</figcaption>
     </figure>
   )
 }
