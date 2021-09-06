@@ -5,7 +5,7 @@ const CardList = (props) => {
 
   cards = cards.map((card) => {
     let handler = clickHandler.bind(null, card.id)
-    return <Card src={card.src} name={card.title} clickHandler={handler}/>
+    return <Card key={card.id} src={card.src} name={card.title} clickHandler={handler}/>
   })
 
   return (
