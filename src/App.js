@@ -4,6 +4,7 @@ import Header from './components/Header'
 import DisplayScore from './components/DisplayScore'
 import PlayAgain from './components/PlayAgain'
 import CardList from './components/CardList'
+import { getRandomArray } from './utils'
 //import './App.css';
 
 const App = () => {
@@ -20,8 +21,12 @@ const App = () => {
     //play again click
   }
 
+  function getRandomCards () {
+    return getRandomArray(cards)
+  }
+
   function getRandomCardImage () {
-    return cards.sort(() => 0.5 - Math.random())[0].src
+    return getRandomCards()[0].src
   }
 
   return (
