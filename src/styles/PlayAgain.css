@@ -1,0 +1,8 @@
+.play-again {
+  display: flex;
+  justify-content: center;
+}
+
+.play-again > * {
+  margin: 0 0.5rem;
+}

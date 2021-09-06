@@ -1,5 +1,6 @@
 import MessageCard from './MessageCard'
 import Button from './Button'
+import './../styles/PlayAgain.css'
 
 const PlayAgain = props => {
   let { clickHandler, image } = props
