@@ -1,6 +1,6 @@
 import uniqid from 'uniqid'
 
-const createCard = title => {
+export const createCard = title => {
   const imageTitle = title.replace(' ', '')
   return {
     title,
@@ -10,7 +10,7 @@ const createCard = title => {
   }
 }
 
-const createCardList = () => {
+export const createCardList = () => {
   let list = [
     'Alex',
     'Marty',
@@ -30,5 +30,3 @@ const createCardList = () => {
     return createCard(name)
   })
 }
-
-export default createCardList
