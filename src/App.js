@@ -15,7 +15,16 @@ const App = () => {
 
   useEffect(() => {
     setShowPlayAgain(() => {
-      return score === cards.length
+      let show = score === cards.length
+      if (show) {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        })
+      }
+
+      return show
     })
   }, [score, cards.length])
 
