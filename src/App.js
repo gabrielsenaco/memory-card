@@ -13,41 +13,11 @@ const App = () => {
   let [cards, setCards] = useState(createCardList())
   let [showPlayAgain, setShowPlayAgain] = useState(false)
 
-  function clearClickedCards () {
-    setCards(cards => {
-      return cards.map(card => {
-        return {
-          ...card,
-          clicked: false
-        }
-      })
-    })
-  }
-
-  function updateBestScore (refScore = score) {
-    setBestScore(bestScore => {
-      if (refScore > bestScore) {
-        bestScore = refScore
-      }
-      return bestScore
-    })
-  }
-
   useEffect(() => {
     setShowPlayAgain(() => {
       return score === cards.length
     })
   }, [score, cards.length])
-
-  function clearStateWhenScoreReachesLimit () {
-    let reachLimit = score === cards.length
-    if (!reachLimit) return
-
-    setShowPlayAgain(() => false)
-    updateBestScore(score)
-    setScore(() => 0)
-    clearClickedCards()
-  }
 
   function handleCardClick (id, event) {
     clearStateWhenScoreReachesLimit()
@@ -80,6 +50,36 @@ const App = () => {
 
   function handlePlayAgainClick () {
     clearStateWhenScoreReachesLimit()
+  }
+
+  function clearClickedCards () {
+    setCards(cards => {
+      return cards.map(card => {
+        return {
+          ...card,
+          clicked: false
+        }
+      })
+    })
+  }
+
+  function updateBestScore (refScore = score) {
+    setBestScore(bestScore => {
+      if (refScore > bestScore) {
+        bestScore = refScore
+      }
+      return bestScore
+    })
+  }
+
+  function clearStateWhenScoreReachesLimit () {
+    let reachLimit = score === cards.length
+    if (!reachLimit) return
+
+    setShowPlayAgain(() => false)
+    updateBestScore(score)
+    setScore(() => 0)
+    clearClickedCards()
   }
 
   function getRandomCards () {
