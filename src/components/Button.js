@@ -1,11 +1,13 @@
-const Button = (props) => {
-  let {onClick, text, color, bgColor} = props
+const Button = props => {
+  let { onClick, text, color, bgColor } = props
 
   let className = 'button'
   className = className.concat(' ', color || '').concat(' ', bgColor || '')
 
   return (
-      <button onClick={onClick} className={className}>{text}</button>
+    <button onClick={onClick} className={className}>
+      {text}
+    </button>
   )
 }
 
