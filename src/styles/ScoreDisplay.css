@@ -20,3 +20,9 @@
   color: var(--lightsky-color);
   margin-left: 0.5rem;
 }
+
+@media(max-width: 767px) {
+  .score-display .score {
+    font-size: 1.5rem;
+  }
+}
