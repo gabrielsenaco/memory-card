@@ -1,6 +1,7 @@
 # Memory Card
 
 Test your memory: click in each image once
+The theme is about Madagascar(Film), And I really loved this wiki: [Madagascar Wiki](madagascar.fandom.com/). I used characters images, thank you!
 
 ## Table of contents
 
