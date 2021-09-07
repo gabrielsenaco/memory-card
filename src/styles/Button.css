@@ -10,12 +10,12 @@
   color: var(--white-color);
   text-transform: uppercase;
   font-weight: var(--primary-font-weight);
-  filter: var(--card-filter-03dp);
+  box-shadow: var(--card-shadow-03dp);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .button:hover {
-  filter: var(--card-filter-04dp);
+  box-shadow: var(--card-shadow-04dp);
   background-color: var(--success-color);
 }

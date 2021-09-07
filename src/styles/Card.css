@@ -5,7 +5,7 @@
   background-color: var(--darksky-color);
   margin: 1rem;
   border-radius: var(--card-border-radius);
-  filter: var(--card-filter-04dp);
+  box-shadow: var(--card-shadow-04dp);
   cursor: pointer;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .card:hover {
-  filter: var(--card-filter-08dp);
+  box-shadow: var(--card-shadow-08dp);
 }
 
 .card:hover figcaption {
