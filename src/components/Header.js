@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <h1>Madagascar Memory</h1>
       <p>
-        Click on any image you haven't clicked on before. You get 1 point for
+        Test your memory: click in each image once. You get 1 point for
         each correct image
       </p>
       <p>If you click on an invalid image, you lose</p>
