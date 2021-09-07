@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.a60b36f7.chunk.css",
+    "main.js": "/memory-card/static/js/main.a7ac0f18.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.a7ac0f18.chunk.js.map",
+    "runtime-main.js": "/memory-card/static/js/runtime-main.324b4811.js",
+    "runtime-main.js.map": "/memory-card/static/js/runtime-main.324b4811.js.map",
+    "static/css/2.0978f8b3.chunk.css": "/memory-card/static/css/2.0978f8b3.chunk.css",
+    "static/js/2.62429567.chunk.js": "/memory-card/static/js/2.62429567.chunk.js",
+    "static/js/2.62429567.chunk.js.map": "/memory-card/static/js/2.62429567.chunk.js.map",
+    "index.html": "/memory-card/index.html",
+    "static/css/2.0978f8b3.chunk.css.map": "/memory-card/static/css/2.0978f8b3.chunk.css.map",
+    "static/css/main.a60b36f7.chunk.css.map": "/memory-card/static/css/main.a60b36f7.chunk.css.map",
+    "static/js/2.62429567.chunk.js.LICENSE.txt": "/memory-card/static/js/2.62429567.chunk.js.LICENSE.txt",
+    "static/media/Alex.7e9d8d05.png": "/memory-card/static/media/Alex.7e9d8d05.png",
+    "static/media/Gloria.22766751.png": "/memory-card/static/media/Gloria.22766751.png",
+    "static/media/KingJulien.b772d0c2.png": "/memory-card/static/media/KingJulien.b772d0c2.png",
+    "static/media/Kowalski.2785f2c5.png": "/memory-card/static/media/Kowalski.2785f2c5.png",
+    "static/media/Marty.6bac5bd3.png": "/memory-card/static/media/Marty.6bac5bd3.png",
+    "static/media/Maurice.5eca87ea.png": "/memory-card/static/media/Maurice.5eca87ea.png",
+    "static/media/Melman.c7ff4575.png": "/memory-card/static/media/Melman.c7ff4575.png",
+    "static/media/Mort.03a16264.png": "/memory-card/static/media/Mort.03a16264.png",
+    "static/media/Private.3879da0c.png": "/memory-card/static/media/Private.3879da0c.png",
+    "static/media/QueenClover.06a26b68.png": "/memory-card/static/media/QueenClover.06a26b68.png",
+    "static/media/Rico.6dcb3203.png": "/memory-card/static/media/Rico.6dcb3203.png",
+    "static/media/Skipper.8b47b20c.png": "/memory-card/static/media/Skipper.8b47b20c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.324b4811.js",
+    "static/css/2.0978f8b3.chunk.css",
+    "static/js/2.62429567.chunk.js",
+    "static/css/main.a60b36f7.chunk.css",
+    "static/js/main.a7ac0f18.chunk.js"
+  ]
+}
