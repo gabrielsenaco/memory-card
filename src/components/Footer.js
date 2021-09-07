@@ -11,7 +11,7 @@ const Footer = () => {
         see our repository
       </a>
       <a href='https://github.com/gabesenacom' target='_blank' rel='noreferrer'>
-        see author's repository
+        see author's profile
       </a>
     </footer>
   )
